@@ -4,8 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_tutorial"
+        xmlns:commands="clr-namespace:wpf_tutorial.commands"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.CommandBindings>
+        <CommandBinding Command="{x:Static local:MainWindow.Cmd1}"
+                        Executed="Action1"
+                        />
+    </Window.CommandBindings>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="4*"/>
@@ -16,8 +22,8 @@
             <ColumnDefinition Width="11*"/>
             <ColumnDefinition Width="248*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textbox_with_text" Grid.Column="1" HorizontalAlignment="Left" Height="205" Margin="9.6,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="476"/>
-        <Button x:Name="view_entered_text" Content="Let me see" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="338.6,8.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="{Binding Path=Cmd1}">
+        <TextBox x:Name="textbox_with_text" Grid.Column="1" HorizontalAlignment="Left" Height="205" Margin="9.6,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="476" />
+        <Button x:Name="view_entered_text" Content="Let me see" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="338.6,8.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,16 +33,15 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="view_entered_text_Copy" Content="Let me see2" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="54.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="{Binding Path=Cmd1}" Click="view_entered_text_Copy_Click">
+        <Button x:Name="view_entered_text_Copy" Content="Let me see2" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="54.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="13.205"/>
+                    <RotateTransform Angle="18.205"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-
     </Grid>
 </Window>
