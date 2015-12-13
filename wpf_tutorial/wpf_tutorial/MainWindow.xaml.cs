@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace wpf_tutorial
 {
@@ -20,14 +10,26 @@ namespace wpf_tutorial
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static commands.Command1 cmd1 = new commands.Command1();
+        public static ICommand Cmd1
+        {
+            get
+            {
+                return cmd1;
+            }
+            private set { }
+        }
+
         public MainWindow()
         {
             InitializeComponent();
+            CommandBinding cb = new CommandBinding(Cmd1);
+            this.CommandBindings.Add(cb);
         }
 
-        private void view_entered_text_Click(object sender, RoutedEventArgs e)
+        private void view_entered_text_Copy_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(String.Format("You entered: {0}",textbox_with_text.Text));
+            cmd1.Execute( sender );
         }
     }
 }
