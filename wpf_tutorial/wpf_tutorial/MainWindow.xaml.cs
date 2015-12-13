@@ -25,6 +25,12 @@ namespace wpf_tutorial
             InitializeComponent();
         }
 
+        private void CanExecuteCommand(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+            e.Handled = true;
+        }
+
         public void Action1( object sender, ExecutedRoutedEventArgs a )
         {
             MessageBox.Show("Event executed!");
