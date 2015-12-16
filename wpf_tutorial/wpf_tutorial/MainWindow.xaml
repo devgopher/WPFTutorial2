@@ -20,35 +20,29 @@
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="45*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="201*"/>
             <RowDefinition Height="76"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="11*"/>
             <ColumnDefinition Width="248*"/>
         </Grid.ColumnDefinitions>
-        <TextBox x:Name="textbox_with_text" Grid.Column="1" HorizontalAlignment="Left" Height="205" Margin="9.6,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="476" />
+        <TextBox x:Name="textbox_with_text" Grid.Column="1" HorizontalAlignment="Left" Height="165" Margin="9.6,11,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="476" />
         <Button x:Name="view_entered_text" Content="Let me see" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="338.6,8.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
             <Button.RenderTransform>
                 <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
                     <RotateTransform Angle="-13.205"/>
-                    <TranslateTransform/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button Content="{StaticResource BtnKey}" Grid.Column="1" HorizontalAlignment="Left" Margin="224.6,0.2,0,1.8" Grid.Row="2" RenderTransformOrigin="0.574,0.744"/>
-        <Button x:Name="view_entered_text_Copy" Content="Let me see2" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="54.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="18.205"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button Content="{StaticResource BtnKey}" Grid.Column="1" HorizontalAlignment="Left" Margin="224.6,0.2,0,1.8" Grid.Row="2" RenderTransformOrigin="0.574,0.744" Width="59"/>
+        <Button x:Name="view_entered_text_Copy" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1" BorderBrush="#FF060606" BorderThickness="4">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Source="img01.png"/>
+                </ControlTemplate>
+            </Button.Template>
         </Button>
     </Grid>
 </Window>

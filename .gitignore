@@ -45,3 +45,15 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.png
+*.gif
+wpf_tutorial/.vs/wpf_tutorial/v14/.suo
+*.exe
+wpf_tutorial/wpf_tutorial/bin/Debug/wpf_tutorial.pdb
+*.cache
+wpf_tutorial/wpf_tutorial/obj/Debug/MainWindow.baml
+*.txt
+wpf_tutorial/wpf_tutorial/obj/Debug/wpf_tutorial.exe
+*.cache
+*.cache
+*.cache

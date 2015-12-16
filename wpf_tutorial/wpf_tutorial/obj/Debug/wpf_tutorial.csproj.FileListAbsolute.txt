@@ -1,7 +1,6 @@
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\bin\Debug\wpf_tutorial.exe.config
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\bin\Debug\wpf_tutorial.exe
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\bin\Debug\wpf_tutorial.pdb
-C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.csprojResolveAssemblyReference.cache
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\MainWindow.g.cs
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\App.g.cs
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial_MarkupCompile.cache
@@ -12,3 +11,4 @@ C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.csproj.GenerateResource.Cache
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.exe
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.pdb
+C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.csprojResolveAssemblyReference.cache
