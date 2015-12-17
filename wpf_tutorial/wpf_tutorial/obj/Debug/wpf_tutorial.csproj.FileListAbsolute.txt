@@ -12,3 +12,4 @@ C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.exe
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.pdb
 C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\wpf_tutorial.csprojResolveAssemblyReference.cache
+C:\Users\Igor\Documents\GitHub\WPFTutorial2\wpf_tutorial\wpf_tutorial\obj\Debug\GeneratedInternalTypeHelper.g.cs
