@@ -23,6 +23,27 @@
         <local:Gradient x:Key="GradConv2" Color1="red" Color2="blue">
 
         </local:Gradient>
+        <Transform3DGroup x:Key="t3D">
+            <RotateTransform3D CenterX="1" CenterY="2" CenterZ="3">
+                
+            </RotateTransform3D>
+        </Transform3DGroup>
+        <TransformGroup x:Key="Trg">
+            <RotateTransform Angle="20.0"/>
+            
+        </TransformGroup>
+        <Style x:Key="BtnStyle" TargetType="Button">
+            <Setter Property="FontFamily" Value="Times New Roman"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Background">
+                <Setter.Value>
+                    <LinearGradientBrush>
+                        <GradientStop Color="Aqua"/>
+                        <GradientStop Color="DarkBlue" Offset="0.6"/>
+                    </LinearGradientBrush>
+                </Setter.Value>
+            </Setter>
+        </Style>
     </Window.Resources>
     <Grid Background="{Binding Converter={StaticResource GradConv2}}">
         <Grid.RowDefinitions>
@@ -36,15 +57,10 @@
         </Grid.ColumnDefinitions>
         <TextBox x:Name="textbox_with_text" Grid.Column="1" HorizontalAlignment="Left" Height="165" Margin="9.6,11,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="476" 
                  Background="{Binding Converter={StaticResource GradConv}}"/>
-        <Button x:Name="view_entered_text" Content="Let me see" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="338.6,8.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
-            <Button.RenderTransform>
-                <TransformGroup>
-                    <RotateTransform Angle="-13.205"/>
-                </TransformGroup>
-            </Button.RenderTransform>
+        <Button x:Name="view_entered_text" RenderTransform="{StaticResource Trg}" Style="{StaticResource BtnStyle}" Content="Let me see" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="338.6,8.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.5,0.5" Command="local:MainWindow.Cmd1">
         </Button>
-        <Button Content="{StaticResource BtnKey}" Grid.Column="1" HorizontalAlignment="Left" Margin="224.6,0.2,0,1.8" Grid.Row="2" RenderTransformOrigin="0.574,0.744" Width="59"/>
-        <Button x:Name="view_entered_text_Copy" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.346,0.566" Command="local:MainWindow.Cmd1" BorderBrush="#FF060606" BorderThickness="4">
+        <Button Content="{StaticResource BtnKey}" RenderTransform="{StaticResource Trg}" Style="{StaticResource BtnStyle}" Grid.Column="1" HorizontalAlignment="Left" Margin="224.6,0.2,0,1.8" Grid.Row="2" RenderTransformOrigin="0.574,0.744" Width="59"/>
+        <Button x:Name="view_entered_text_Copy" Style="{StaticResource BtnStyle}" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="25.6,10.2,0,0" Grid.Row="2" VerticalAlignment="Top" Width="145" RenderTransformOrigin="0.346,0.566" Command="local:MainWindow.Cmd1" BorderBrush="#FF060606" BorderThickness="4">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="img01.png"/>
